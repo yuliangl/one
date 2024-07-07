@@ -1,0 +1,4 @@
+/home/onhway/workspace/build/CMakeFiles/sylar.dir
+/home/onhway/workspace/build/CMakeFiles/logTest.dir
+/home/onhway/workspace/build/CMakeFiles/edit_cache.dir
+/home/onhway/workspace/build/CMakeFiles/rebuild_cache.dir
