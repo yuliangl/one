@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/onhway/workspace
+CMAKE_SOURCE_DIR = /home/onhway/one/one
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/onhway/workspace/build
+CMAKE_BINARY_DIR = /home/onhway/one/one/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -86,14 +86,14 @@ clean: CMakeFiles/logTest.dir/clean
 CMakeFiles/sylar.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onhway/workspace/build/CMakeFiles --progress-num=3,4 "Built target sylar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onhway/one/one/build/CMakeFiles --progress-num=3,4 "Built target sylar"
 .PHONY : CMakeFiles/sylar.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sylar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/workspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/one/one/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sylar.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/workspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/one/one/build/CMakeFiles 0
 .PHONY : CMakeFiles/sylar.dir/rule
 
 # Convenience name for target.
@@ -112,14 +112,14 @@ CMakeFiles/sylar.dir/clean:
 CMakeFiles/logTest.dir/all: CMakeFiles/sylar.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logTest.dir/build.make CMakeFiles/logTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logTest.dir/build.make CMakeFiles/logTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onhway/workspace/build/CMakeFiles --progress-num=1,2 "Built target logTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onhway/one/one/build/CMakeFiles --progress-num=1,2 "Built target logTest"
 .PHONY : CMakeFiles/logTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/logTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/one/one/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/workspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onhway/one/one/build/CMakeFiles 0
 .PHONY : CMakeFiles/logTest.dir/rule
 
 # Convenience name for target.

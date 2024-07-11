@@ -1,4 +1,4 @@
-# Install script for directory: /home/onhway/workspace
+# Install script for directory: /home/onhway/one/one
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/onhway/workspace/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/onhway/one/one/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/onhway/workspace/tests/logTest.cc" "CMakeFiles/logTest.dir/tests/logTest.cc.o" "gcc" "CMakeFiles/logTest.dir/tests/logTest.cc.o.d"
+  "/home/onhway/one/one/tests/logTest.cc" "CMakeFiles/logTest.dir/tests/logTest.cc.o" "gcc" "CMakeFiles/logTest.dir/tests/logTest.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/onhway/workspace/build/CMakeFiles/sylar.dir/DependInfo.cmake"
+  "/home/onhway/one/one/build/CMakeFiles/sylar.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
