@@ -1,17 +1,23 @@
 #ifndef __LIST__
 #define __LIST__
 
-#include <>
+//#include <>
 
+namespace sylar{
 
-class node {
+class Node {
 public:
-    node();
-    ~node();
-private:
+    Node();
+    Node(int val);
+    Node(int val, Node* p, Node* n);
+    Node(const Node& node);
+    ~Node();
+
+    Node& operator=(const Node& node);
+
     int value;
-    node* prev;
-    node* next;
+    Node* prev;
+    Node* next;
 };
 
 
@@ -22,12 +28,13 @@ public:
 
     void push_back(node* node);
     void push_front(node* node);
-    void pop_back(node* node);
-    void pop_front(node* node);
+    void pop_back();
+    void pop_front();
     
 
 private:
-    node* m_head;
+    Node* m_head;
 };
 
+} // end namespace
 #endif
