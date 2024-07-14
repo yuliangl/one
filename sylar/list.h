@@ -26,8 +26,8 @@ public:
     DuLinkList();
     ~DuLinkList();
 
-    void push_back(node* node);
-    void push_front(node* node);
+    void push_back(Node* node);
+    void push_front(Node* node);
     void pop_back();
     void pop_front();
     

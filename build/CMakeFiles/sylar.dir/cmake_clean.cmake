@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "../lib/libsylar.pdb"
   "../lib/libsylar.so"
+  "CMakeFiles/sylar.dir/sylar/list.cc.o"
+  "CMakeFiles/sylar.dir/sylar/list.cc.o.d"
   "CMakeFiles/sylar.dir/sylar/log.cc.o"
   "CMakeFiles/sylar.dir/sylar/log.cc.o.d"
 )

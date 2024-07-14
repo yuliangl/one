@@ -1,1 +1,1 @@
-1970-01-01 08:00:01	ROOT	0	DEBUG	/home/onhway/one/one/tests/logTest.cc	9	part log test = 1.
+1970-01-01 08:00:01	ROOT	0	DEBUG	/home/onhway/one/one/tests/logTest.cc	10	part log test = 1.

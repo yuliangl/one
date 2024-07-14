@@ -1,3 +1,4 @@
+#include <iostream>
 #include "list.h"
 
 namespace sylar {
@@ -27,6 +28,7 @@ Node::Node(const Node& node)
     ,prev(new Node)
     ,next(new Node){
 
+    printf("copy construstor ...................\n");
     *prev = *(node.prev);
     *next = *(node.next);
 
@@ -38,18 +40,19 @@ Node::~Node(){
 }
 
 Node& Node::operator=(const Node& node){
+    printf("copy ==========...................\n");
     value = node.value;
-    Node* tmpNode(node);  
+    Node* tmpNode(new Node(node));
 
     if(prev)
         delete prev;
     if(next)
         delete next;
 
-    prev = new Node(tmpNode.prev);
-    next = new Node(tmpNode.next);
+    prev = new Node(*(tmpNode->prev));
+    next = new Node(*(tmpNode->next));
 
-    retrun *this; 
+    return *this; 
 }
 
 

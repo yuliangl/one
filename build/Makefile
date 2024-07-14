@@ -145,6 +145,30 @@ logTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logTest.dir/build.make CMakeFiles/logTest.dir/build
 .PHONY : logTest/fast
 
+sylar/list.o: sylar/list.cc.o
+.PHONY : sylar/list.o
+
+# target to build an object file
+sylar/list.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/list.cc.o
+.PHONY : sylar/list.cc.o
+
+sylar/list.i: sylar/list.cc.i
+.PHONY : sylar/list.i
+
+# target to preprocess a source file
+sylar/list.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/list.cc.i
+.PHONY : sylar/list.cc.i
+
+sylar/list.s: sylar/list.cc.s
+.PHONY : sylar/list.s
+
+# target to generate assembly for a file
+sylar/list.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/list.cc.s
+.PHONY : sylar/list.cc.s
+
 sylar/log.o: sylar/log.cc.o
 .PHONY : sylar/log.o
 
@@ -203,6 +227,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... logTest"
 	@echo "... sylar"
+	@echo "... sylar/list.o"
+	@echo "... sylar/list.i"
+	@echo "... sylar/list.s"
 	@echo "... sylar/log.o"
 	@echo "... sylar/log.i"
 	@echo "... sylar/log.s"

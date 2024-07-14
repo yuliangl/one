@@ -219,7 +219,8 @@ CMakeFiles/logTest.dir/tests/logTest.cc.o: ../tests/logTest.cc \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h
+  /usr/include/c++/11/bits/erase_if.h \
+  ../sylar/list.h
 
 
 /usr/include/c++/11/bits/erase_if.h:
@@ -607,6 +608,8 @@ CMakeFiles/logTest.dir/tests/logTest.cc.o: ../tests/logTest.cc \
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+../sylar/list.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

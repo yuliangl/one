@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -fPIC -ggdb -std=c++11 -Wall -
 
 set(LIB_SRC
     sylar/log.cc
+    sylar/list.cc
     )
 
 add_library(sylar SHARED ${LIB_SRC})
