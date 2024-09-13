@@ -3,12 +3,15 @@
 
 using namespace sylar;
 
-int main(int argv, char** argc){
-    
+void logTest(){
     LoggerMgr::getInstance()->init();
     int test = 1;
     printf_debug("ROOT", "part log test = %d.",test);  
+    printf_debug("ROOT", "part log finash test = %d.",test);  
 
+}
+
+void listTest(){
     Node head(0);
     Node first(1);
     Node second(2);
@@ -19,7 +22,12 @@ int main(int argv, char** argc){
     second.prev = &first;
 
     Node three(first);
+}
 
-    printf_debug("ROOT", "part log finash test = %d.",test);  
+int main(int argv, char** argc){
+    
+    logTest();
+
+
     return 0;
 }
