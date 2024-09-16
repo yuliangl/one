@@ -1,5 +1,7 @@
+#include <iostream>
 #include "../sylar/log.h"
 #include "../sylar/list.h"
+#include "../sylar/string.h"
 
 using namespace sylar;
 
@@ -24,9 +26,20 @@ void listTest(){
     Node three(first);
 }
 
+void stringTest(){
+    String strFirst("first");
+    String strSecond(strFirst);
+    String strThird = strSecond;
+
+    std::cout << "first: " << strFirst << std::endl;
+    std::cout << "second: " << strSecond << std::endl;
+    std::cout << "third: " << strThird << std::endl;
+}
+
 int main(int argv, char** argc){
     
     logTest();
+    stringTest();
 
 
     return 0;
