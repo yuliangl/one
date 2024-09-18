@@ -9,27 +9,19 @@ String::String(){
 
 String::String(const char* str){
     this->alloc();
-    int index = 0;
-    while(*str != '\0'){
-        m_str[index] = *str++;
-        ++index;
+    char *p = m_str; 
+    while((*p++= *str++) != '\0'){
     }
-    m_str[index] = *str;
 }
 
 String::String(const String& src){
     this->alloc();
 
+    char *p = m_str; 
     const char* str = src.getStr();
-    std::cout << "copy: " << str << std::endl;
-    int index = 0;
-    while(*str != '\0'){
-        m_str[index] = *str++;
-        ++index;
+    while((*p++= *str++) != '\0'){
     }
-    m_str[index] = *str;
 
-    std::cout << "copyend: " << str << std::endl;
 }
 
 String::String(String&& str) noexcept{
@@ -41,13 +33,10 @@ String::~String(){
 }
 
 String& String::operator=(const String& src){
+    char *p = m_str; 
     const char* str = src.getStr();
-    int index = 0;
-    while(*str != '\0'){
-        m_str[index] = *str++;
-        ++index;
+    while((*p++= *str++) != '\0'){
     }
-    m_str[index] = *str;
     return *this;
 }
 
