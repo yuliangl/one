@@ -16,15 +16,22 @@ public:
     ~String();
 
     String& operator=(const String& src);
+    String& operator=(String&& src) noexcept;
+    bool operator==(const String& src);
+    bool operator!=(const String& src);
     friend std::ostream& operator<<(std::ostream& os, const String& str);
 
 
-    void alloc();
-    int length(const char* src);
-    const char* getStr() const {return m_str;}
+    char* getStr() const {return m_str;}
+    int getSize() const {return m_size;}
+    void setStr(char * src) {m_str = src;}
 
 private:
+    void alloc();
+    int length(const char* src);
+
     char* m_str;
+    int m_size = 0;
     int m_capacity = 100;
     
 };
