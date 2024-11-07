@@ -22,6 +22,7 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const String& str);
 
 
+    void swap(String& rhs);
     char* getStr() const {return m_str;}
     int getSize() const {return m_size;}
     void setStr(char * src) {m_str = src;}

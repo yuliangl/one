@@ -1,3 +1,5 @@
+#include <utility>
+
 #include "string.h"
 
 namespace sylar {
@@ -90,6 +92,11 @@ std::ostream& operator<<(std::ostream& os, const String& str){
     return os;
 }
 
+void String::swap(String& rhs){
+    using std::swap;
+    swap(this->m_str, rhs.m_str);
+    swap(this->m_size, rhs.m_size);
+}
 void String::alloc(){
     m_str = new char[m_capacity];
 }
