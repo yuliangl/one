@@ -19,6 +19,7 @@ public:
     String& operator=(String&& src) noexcept;
     bool operator==(const String& src);
     bool operator!=(const String& src);
+    String& operator+(const String& src);
     friend std::ostream& operator<<(std::ostream& os, const String& str);
 
 

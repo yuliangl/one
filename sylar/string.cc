@@ -1,4 +1,5 @@
 #include <utility>
+#include <cstring>
 
 #include "string.h"
 
@@ -85,6 +86,11 @@ bool String::operator!=(const String& src){
     if(*this == src)
         return true;
     return false;
+}
+
+String& String::operator+(const String& src){
+    strcat(m_str, src.m_str);
+    return *this;
 }
 
 std::ostream& operator<<(std::ostream& os, const String& str){
