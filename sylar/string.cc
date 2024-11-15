@@ -88,9 +88,9 @@ bool String::operator!=(const String& src){
     return false;
 }
 
-String& String::operator+(const String& src){
-    strcat(m_str, src.m_str);
-    return *this;
+String String::operator+(String& lhs, String& rhs){
+    strcat(lhs.m_str, rhs.m_str);
+    return String(lhs.m_str);
 }
 
 std::ostream& operator<<(std::ostream& os, const String& str){
