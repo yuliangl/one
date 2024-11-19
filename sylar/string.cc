@@ -88,7 +88,25 @@ bool String::operator!=(const String& src){
     return false;
 }
 
-String String::operator+(String& lhs, String& rhs){
+char& String::operator[](std::size_t n){
+    char* tmp = m_str;
+    while(n>0){
+        tmp++;
+        n--;
+    }
+    return *tmp;
+}
+
+const char& String::operator[](std::size_t n) const {
+    char* tmp = m_str;
+    while(n>0){
+        tmp++;
+        n--;
+    }
+    return *tmp;
+}
+
+String operator+(String& lhs, String& rhs){
     strcat(lhs.m_str, rhs.m_str);
     return String(lhs.m_str);
 }
