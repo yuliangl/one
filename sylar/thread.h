@@ -33,9 +33,9 @@ public:
 private:
     static void* run(void* arg);
     
-    pthread_t m_pt = 0;
-    string m_name;
-    pid_t m_pid = -1;
+    pthread_t m_pt = 0;// thread_t
+    string m_name; // thread name
+    pid_t m_pid = -1; // thread id 
     std::function<void()> m_callback;
 };
 

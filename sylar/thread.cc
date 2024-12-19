@@ -13,7 +13,7 @@ Thread* Thread::GetThis() {
 }
 
 std::string& Thread::GetName() {
-    return t_name;
+    return t_threadName;
 }
 
 void Thread::SetName(const std::string& name) {
@@ -26,15 +26,36 @@ Thread::Thread(std::function<void()> cb, std::string& name)
     :m_name(name)
     ,m_callback(cb)
 {
-    
+    int rv = pthread_create(&m_pid, nullptr, &Thread::run, this);    
 }
-Thread::~Thread();
+Thread::~Thread(){
+    int rv = pthread_cancel(m_pt);
+}
 
-int join();
-int detach();
+int Thread::join(){
+    int rv =  pthread_join(m_pt, nullptr);
+}
+int Thread::detach(){
+    int rv =  pthread_detach(m_pt); 
+}
 
-const std::string& getName() const {return m_name;}
 
+void* Thread::run(void* arg){
+    Thread* thread = (Thread*)arg;
+    t_thread = thread;
+    t_threadName = thread->m_name;
+    thread->m_pid = pthread_self();
+
+    pthread_setname_np(pthread_self(), t_threadName.c_str());
+
+    std::function<void()> cb;
+    cb.swap(thread->m_callback);
+
+    cb();
+
+    return 0;
+
+}
 
 
 
